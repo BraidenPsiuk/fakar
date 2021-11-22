@@ -2,7 +2,6 @@
   "name": "fakar",
   "version": "1.0.5",
   "description": "test repo for building library with vite and publishing to NPM",
-  "main": "/src/fakar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +14,19 @@
   "bugs": {
     "url": "https://github.com/BraidenPsiuk/fakar/issues"
   },
-  "homepage": "https://github.com/BraidenPsiuk/fakar#readme"
+  "homepage": "https://github.com/BraidenPsiuk/fakar#readme",
+  "devDependencies": {
+    "vite": "^2.6.14"
+  },
+  "main": "./dist/fakar.umd.js",
+  "module": "./dist/fakar.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/fakar.es.js",
+      "require": "./dist/fakar.umd.js"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
