@@ -2,7 +2,7 @@
   "name": "fakar",
   "version": "1.0.4",
   "description": "test repo for building library with vite and publishing to NPM",
-  "main": "index.js",
+  "main": "/src/fakar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
